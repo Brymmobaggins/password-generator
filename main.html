@@ -14,15 +14,14 @@
     </div>
 
     <script>
-      function getPassword() {
-        let chars =
+      var getPassword = function() {
+        var chars =
           "abcdefghijklmnopqrstwxyzABCDEFGHIJKLMNOBQRSTWXYZ1234567890!@#$%^&*()_+|}{:?><";
-        let passwordLength = 12;
-        let password = "";
+        var passwordLength = 12;
+        var password = "";
 
         for (let i = 0; i < passwordLength; i++) {
-          let randomNumber = Math.floor(Math.random() * chars.length);
-          password += chars.substring(randomNumber, randomNumber + 1);
+          password += chars[Math.floor(Math.random()* chars.length)];
         }
         document.getElementById("password").value = password;
       }

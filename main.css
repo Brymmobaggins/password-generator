@@ -51,5 +51,6 @@ body {
   border-radius: 8px;
 }
 .inputBody #btn:active {
-  background: #b45211;
+  /* background: #b45211; */
+  /* transition: scale(1, 0.2); */
 }
